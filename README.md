@@ -1,16 +1,10 @@
 # flutter_channel_test
 
-Channel test app
+Run TFlite dengan Flutter menggunakan Method Channel
 
-## Getting Started
+## Language
+- Dart
+- Kotlin
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cara kerja
+Menggunakan Camera package di project Flutter kemudian akan melakukan stream dengan parameter CameraImage. Kemudian Plane.bytes didalam CameraImage akan dikirim ke MainActivity.kt menggunakan Method Channel yang sudah diinisialisasi, dan setelah dilakukan proses di MainActivity.kt akan dikembalikan ke Dart file sebelumnya.
